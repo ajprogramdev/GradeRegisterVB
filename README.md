@@ -1,3 +1,3 @@
 # GradeRegisterVB
 
-<img src="Proyectdemo.gif" width="250" height="250" />
+<img src="Proyectdemo.gif" width="600" height="600" />
