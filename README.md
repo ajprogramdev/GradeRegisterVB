@@ -1,2 +1,3 @@
 # GradeRegisterVB
-![](Proyectdemo.gif)
+
+<img src="Proyectdemo.gif" width="250" height="250" />
