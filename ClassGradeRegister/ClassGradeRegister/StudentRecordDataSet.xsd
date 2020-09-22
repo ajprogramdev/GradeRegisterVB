@@ -1,0 +1,1021 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StudentRecordDataSet" targetNamespace="http://tempuri.org/StudentRecordDataSet.xsd" xmlns:mstns="http://tempuri.org/StudentRecordDataSet.xsd" xmlns="http://tempuri.org/StudentRecordDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="StudentRecordDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="StudentRecordDBConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ClassGradeRegister.My.MySettings.GlobalReference.Default.StudentRecordDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RecordTableAdapter" GeneratorDataComponentClassName="RecordTableAdapter" Name="Record" UserDataComponentName="RecordTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="dbo.Record" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Record] WHERE (([ID] = @Original_ID) AND ([Name] = @Original_Name) AND ((@IsNull_StudentID = 1 AND [StudentID] IS NULL) OR ([StudentID] = @Original_StudentID)) AND ([Course] = @Original_Course) AND ([Group] = @Original_Group) AND ((@IsNull_Quiz#1 = 1 AND [Quiz#1] IS NULL) OR ([Quiz#1] = @Original_Quiz#1)) AND ((@IsNull_Quiz#1Max = 1 AND [Quiz#1Max] IS NULL) OR ([Quiz#1Max] = @Original_Quiz#1Max)) AND ((@IsNull_DateQuiz#1 = 1 AND [DateQuiz#1] IS NULL) OR ([DateQuiz#1] = @Original_DateQuiz#1)) AND ((@IsNull_Quiz#2 = 1 AND [Quiz#2] IS NULL) OR ([Quiz#2] = @Original_Quiz#2)) AND ((@IsNull_Quiz#2Max = 1 AND [Quiz#2Max] IS NULL) OR ([Quiz#2Max] = @Original_Quiz#2Max)) AND ((@IsNull_DateQuiz#2 = 1 AND [DateQuiz#2] IS NULL) OR ([DateQuiz#2] = @Original_DateQuiz#2)) AND ((@IsNull_Quiz#3 = 1 AND [Quiz#3] IS NULL) OR ([Quiz#3] = @Original_Quiz#3)) AND ((@IsNull_Quiz#3Max = 1 AND [Quiz#3Max] IS NULL) OR ([Quiz#3Max] = @Original_Quiz#3Max)) AND ((@IsNull_DateQuiz#3 = 1 AND [DateQuiz#3] IS NULL) OR ([DateQuiz#3] = @Original_DateQuiz#3)) AND ((@IsNull_Quiz#4 = 1 AND [Quiz#4] IS NULL) OR ([Quiz#4] = @Original_Quiz#4)) AND ((@IsNull_Quiz#4Max = 1 AND [Quiz#4Max] IS NULL) OR ([Quiz#4Max] = @Original_Quiz#4Max)) AND ((@IsNull_DateQuiz#4 = 1 AND [DateQuiz#4] IS NULL) OR ([DateQuiz#4] = @Original_DateQuiz#4)) AND ((@IsNull_Quiz#5 = 1 AND [Quiz#5] IS NULL) OR ([Quiz#5] = @Original_Quiz#5)) AND ((@IsNull_Quiz#5Max = 1 AND [Quiz#5Max] IS NULL) OR ([Quiz#5Max] = @Original_Quiz#5Max)) AND ((@IsNull_DateQuiz#5 = 1 AND [DateQuiz#5] IS NULL) OR ([DateQuiz#5] = @Original_DateQuiz#5)) AND ((@IsNull_Quiz#6 = 1 AND [Quiz#6] IS NULL) OR ([Quiz#6] = @Original_Quiz#6)) AND ((@IsNull_Quiz#6Max = 1 AND [Quiz#6Max] IS NULL) OR ([Quiz#6Max] = @Original_Quiz#6Max)) AND ((@IsNull_DateQuiz#6 = 1 AND [DateQuiz#6] IS NULL) OR ([DateQuiz#6] = @Original_DateQuiz#6)) AND ((@IsNull_Exam#1 = 1 AND [Exam#1] IS NULL) OR ([Exam#1] = @Original_Exam#1)) AND ((@IsNull_Exam#1Max = 1 AND [Exam#1Max] IS NULL) OR ([Exam#1Max] = @Original_Exam#1Max)) AND ((@IsNull_DateExam#1 = 1 AND [DateExam#1] IS NULL) OR ([DateExam#1] = @Original_DateExam#1)) AND ((@IsNull_Exam#2 = 1 AND [Exam#2] IS NULL) OR ([Exam#2] = @Original_Exam#2)) AND ((@IsNull_Exam#2Max = 1 AND [Exam#2Max] IS NULL) OR ([Exam#2Max] = @Original_Exam#2Max)) AND ((@IsNull_DateExam#2 = 1 AND [DateExam#2] IS NULL) OR ([DateExam#2] = @Original_DateExam#2)) AND ((@IsNull_Exam#3 = 1 AND [Exam#3] IS NULL) OR ([Exam#3] = @Original_Exam#3)) AND ((@IsNull_Exam#3Max = 1 AND [Exam#3Max] IS NULL) OR ([Exam#3Max] = @Original_Exam#3Max)) AND ((@IsNull_DateExam#3 = 1 AND [DateExam#3] IS NULL) OR ([DateExam#3] = @Original_DateExam#3)) AND ((@IsNull_Exam#4 = 1 AND [Exam#4] IS NULL) OR ([Exam#4] = @Original_Exam#4)) AND ((@IsNull_Exam#4Max = 1 AND [Exam#4Max] IS NULL) OR ([Exam#4Max] = @Original_Exam#4Max)) AND ((@IsNull_DateExam#4 = 1 AND [DateExam#4] IS NULL) OR ([DateExam#4] = @Original_DateExam#4)) AND ((@IsNull_Proyect#1 = 1 AND [Proyect#1] IS NULL) OR ([Proyect#1] = @Original_Proyect#1)) AND ((@IsNull_Proyect#1Max = 1 AND [Proyect#1Max] IS NULL) OR ([Proyect#1Max] = @Original_Proyect#1Max)) AND ((@IsNull_DateProyect#1 = 1 AND [DateProyect#1] IS NULL) OR ([DateProyect#1] = @Original_DateProyect#1)) AND ((@IsNull_Proyect#2 = 1 AND [Proyect#2] IS NULL) OR ([Proyect#2] = @Original_Proyect#2)) AND ((@IsNull_Proyect#2Max = 1 AND [Proyect#2Max] IS NULL) OR ([Proyect#2Max] = @Original_Proyect#2Max)) AND ((@IsNull_DateProyect#2 = 1 AND [DateProyect#2] IS NULL) OR ([DateProyect#2] = @Original_DateProyect#2)) AND ((@IsNull_TOTALQUIZES = 1 AND [TOTALQUIZES] IS NULL) OR ([TOTALQUIZES] = @Original_TOTALQUIZES)) AND ((@IsNull_TOTALEXAMS = 1 AND [TOTALEXAMS] IS NULL) OR ([TOTALEXAMS] = @Original_TOTALEXAMS)) AND ((@IsNull_TOTALPROYECTS = 1 AND [TOTALPROYECTS] IS NULL) OR ([TOTALPROYECTS] = @Original_TOTALPROYECTS)) AND ((@IsNull_TOTALQUIZPOINTS = 1 AND [TOTALQUIZPOINTS] IS NULL) OR ([TOTALQUIZPOINTS] = @Original_TOTALQUIZPOINTS)) AND ((@IsNull_TOTALQUIZMAXPOINTS = 1 AND [TOTALQUIZMAXPOINTS] IS NULL) OR ([TOTALQUIZMAXPOINTS] = @Original_TOTALQUIZMAXPOINTS)) AND ((@IsNull_TOTALEXAMPOINTS = 1 AND [TOTALEXAMPOINTS] IS NULL) OR ([TOTALEXAMPOINTS] = @Original_TOTALEXAMPOINTS)) AND ((@IsNull_TOTALEXAMMAXPOINTS = 1 AND [TOTALEXAMMAXPOINTS] IS NULL) OR ([TOTALEXAMMAXPOINTS] = @Original_TOTALEXAMMAXPOINTS)) AND ((@IsNull_TOTALPROYECTPOINTS = 1 AND [TOTALPROYECTPOINTS] IS NULL) OR ([TOTALPROYECTPOINTS] = @Original_TOTALPROYECTPOINTS)) AND ((@IsNull_TOTALPROYECTMAXPOINTS = 1 AND [TOTALPROYECTMAXPOINTS] IS NULL) OR ([TOTALPROYECTMAXPOINTS] = @Original_TOTALPROYECTMAXPOINTS)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Name" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_StudentID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StudentID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_StudentID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="StudentID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Course" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Course" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Group" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#1Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#1Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#1Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#2Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#2Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#2Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#3" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#3Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#3Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#3Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#3Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#3" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#4" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#4Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#4Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#4Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#4Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#4" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#5" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#5Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#5Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#5Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#5Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#5" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#6" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#6Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#6Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#6Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#6Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#6" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#1Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#1Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#1Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateExam#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateExam#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateExam#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#2Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#2Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#2Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateExam#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateExam#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateExam#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#3" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#3Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#3Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#3Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#3Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateExam#3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateExam#3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateExam#3" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#4" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#4Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#4Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#4Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#4Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateExam#4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateExam#4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateExam#4" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proyect#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proyect#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Proyect#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proyect#1Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proyect#1Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Proyect#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#1Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateProyect#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateProyect#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateProyect#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateProyect#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proyect#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proyect#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Proyect#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proyect#2Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proyect#2Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Proyect#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#2Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateProyect#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateProyect#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateProyect#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateProyect#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALQUIZES" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALQUIZES" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALQUIZES" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZES" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALEXAMS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALEXAMS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALEXAMS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALPROYECTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALPROYECTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALPROYECTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALQUIZPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALQUIZPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALQUIZPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALQUIZMAXPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALQUIZMAXPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALQUIZMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALEXAMPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALEXAMPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALEXAMPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALEXAMMAXPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALEXAMMAXPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALEXAMMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALPROYECTPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALPROYECTPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALPROYECTPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALPROYECTMAXPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALPROYECTMAXPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALPROYECTMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Record] ([Name], [StudentID], [Course], [Group], [Quiz#1], [Quiz#1Max], [DateQuiz#1], [Quiz#2], [Quiz#2Max], [DateQuiz#2], [Quiz#3], [Quiz#3Max], [DateQuiz#3], [Quiz#4], [Quiz#4Max], [DateQuiz#4], [Quiz#5], [Quiz#5Max], [DateQuiz#5], [Quiz#6], [Quiz#6Max], [DateQuiz#6], [Exam#1], [Exam#1Max], [DateExam#1], [Exam#2], [Exam#2Max], [DateExam#2], [Exam#3], [Exam#3Max], [DateExam#3], [Exam#4], [Exam#4Max], [DateExam#4], [Proyect#1], [Proyect#1Max], [DateProyect#1], [Proyect#2], [Proyect#2Max], [DateProyect#2], [TOTALQUIZES], [TOTALEXAMS], [TOTALPROYECTS], [TOTALQUIZPOINTS], [TOTALQUIZMAXPOINTS], [TOTALEXAMPOINTS], [TOTALEXAMMAXPOINTS], [TOTALPROYECTPOINTS], [TOTALPROYECTMAXPOINTS]) VALUES (@Name, @StudentID, @Course, @Group, @Quiz#1, @Quiz#1Max, @DateQuiz#1, @Quiz#2, @Quiz#2Max, @DateQuiz#2, @Quiz#3, @Quiz#3Max, @DateQuiz#3, @Quiz#4, @Quiz#4Max, @DateQuiz#4, @Quiz#5, @Quiz#5Max, @DateQuiz#5, @Quiz#6, @Quiz#6Max, @DateQuiz#6, @Exam#1, @Exam#1Max, @DateExam#1, @Exam#2, @Exam#2Max, @DateExam#2, @Exam#3, @Exam#3Max, @DateExam#3, @Exam#4, @Exam#4Max, @DateExam#4, @Proyect#1, @Proyect#1Max, @DateProyect#1, @Proyect#2, @Proyect#2Max, @DateProyect#2, @TOTALQUIZES, @TOTALEXAMS, @TOTALPROYECTS, @TOTALQUIZPOINTS, @TOTALQUIZMAXPOINTS, @TOTALEXAMPOINTS, @TOTALEXAMMAXPOINTS, @TOTALPROYECTPOINTS, @TOTALPROYECTMAXPOINTS);
+SELECT ID, Name, StudentID, Course, [Group], Quiz#1, Quiz#1Max, DateQuiz#1, Quiz#2, Quiz#2Max, DateQuiz#2, Quiz#3, Quiz#3Max, DateQuiz#3, Quiz#4, Quiz#4Max, DateQuiz#4, Quiz#5, Quiz#5Max, DateQuiz#5, Quiz#6, Quiz#6Max, DateQuiz#6, Exam#1, Exam#1Max, DateExam#1, Exam#2, Exam#2Max, DateExam#2, Exam#3, Exam#3Max, DateExam#3, Exam#4, Exam#4Max, DateExam#4, Proyect#1, Proyect#1Max, DateProyect#1, Proyect#2, Proyect#2Max, DateProyect#2, TOTALQUIZES, TOTALEXAMS, TOTALPROYECTS, TOTALQUIZPOINTS, TOTALQUIZMAXPOINTS, TOTALEXAMPOINTS, TOTALEXAMMAXPOINTS, TOTALPROYECTPOINTS, TOTALPROYECTMAXPOINTS FROM Record WHERE (ID = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@StudentID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="StudentID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Course" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Course" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Group" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#1Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#2Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#3" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#3Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#3Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#3" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#4" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#4Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#4Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#4" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#5" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#5Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#5Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#5" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#6" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#6Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#6Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#6" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#1Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateExam#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#2Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateExam#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#3" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#3Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#3Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateExam#3" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#4" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#4Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#4Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateExam#4" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Proyect#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Proyect#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#1Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateProyect#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateProyect#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Proyect#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Proyect#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#2Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateProyect#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateProyect#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALQUIZES" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALEXAMS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALPROYECTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALQUIZPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALQUIZMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALEXAMPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALEXAMMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALPROYECTPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALPROYECTMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ID, Name, StudentID, Course, [Group], Quiz#1, Quiz#1Max, DateQuiz#1, Quiz#2, Quiz#2Max, DateQuiz#2, Quiz#3, Quiz#3Max, DateQuiz#3, Quiz#4, Quiz#4Max, DateQuiz#4, Quiz#5, Quiz#5Max, DateQuiz#5, Quiz#6, Quiz#6Max, DateQuiz#6, Exam#1, Exam#1Max, DateExam#1, Exam#2, Exam#2Max, DateExam#2, Exam#3, Exam#3Max, DateExam#3, Exam#4, Exam#4Max, DateExam#4, Proyect#1, Proyect#1Max, DateProyect#1, Proyect#2, Proyect#2Max, DateProyect#2, TOTALQUIZES, TOTALEXAMS,TOTALPROYECTS,TOTALQUIZPOINTS,TOTALQUIZMAXPOINTS,TOTALEXAMPOINTS,TOTALEXAMMAXPOINTS,TOTALPROYECTPOINTS,TOTALPROYECTMAXPOINTS FROM dbo.Record</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Record] SET [Name] = @Name, [StudentID] = @StudentID, [Course] = @Course, [Group] = @Group, [Quiz#1] = @Quiz#1, [Quiz#1Max] = @Quiz#1Max, [DateQuiz#1] = @DateQuiz#1, [Quiz#2] = @Quiz#2, [Quiz#2Max] = @Quiz#2Max, [DateQuiz#2] = @DateQuiz#2, [Quiz#3] = @Quiz#3, [Quiz#3Max] = @Quiz#3Max, [DateQuiz#3] = @DateQuiz#3, [Quiz#4] = @Quiz#4, [Quiz#4Max] = @Quiz#4Max, [DateQuiz#4] = @DateQuiz#4, [Quiz#5] = @Quiz#5, [Quiz#5Max] = @Quiz#5Max, [DateQuiz#5] = @DateQuiz#5, [Quiz#6] = @Quiz#6, [Quiz#6Max] = @Quiz#6Max, [DateQuiz#6] = @DateQuiz#6, [Exam#1] = @Exam#1, [Exam#1Max] = @Exam#1Max, [DateExam#1] = @DateExam#1, [Exam#2] = @Exam#2, [Exam#2Max] = @Exam#2Max, [DateExam#2] = @DateExam#2, [Exam#3] = @Exam#3, [Exam#3Max] = @Exam#3Max, [DateExam#3] = @DateExam#3, [Exam#4] = @Exam#4, [Exam#4Max] = @Exam#4Max, [DateExam#4] = @DateExam#4, [Proyect#1] = @Proyect#1, [Proyect#1Max] = @Proyect#1Max, [DateProyect#1] = @DateProyect#1, [Proyect#2] = @Proyect#2, [Proyect#2Max] = @Proyect#2Max, [DateProyect#2] = @DateProyect#2, [TOTALQUIZES] = @TOTALQUIZES, [TOTALEXAMS] = @TOTALEXAMS, [TOTALPROYECTS] = @TOTALPROYECTS, [TOTALQUIZPOINTS] = @TOTALQUIZPOINTS, [TOTALQUIZMAXPOINTS] = @TOTALQUIZMAXPOINTS, [TOTALEXAMPOINTS] = @TOTALEXAMPOINTS, [TOTALEXAMMAXPOINTS] = @TOTALEXAMMAXPOINTS, [TOTALPROYECTPOINTS] = @TOTALPROYECTPOINTS, [TOTALPROYECTMAXPOINTS] = @TOTALPROYECTMAXPOINTS WHERE (([ID] = @Original_ID) AND ([Name] = @Original_Name) AND ((@IsNull_StudentID = 1 AND [StudentID] IS NULL) OR ([StudentID] = @Original_StudentID)) AND ([Course] = @Original_Course) AND ([Group] = @Original_Group) AND ((@IsNull_Quiz#1 = 1 AND [Quiz#1] IS NULL) OR ([Quiz#1] = @Original_Quiz#1)) AND ((@IsNull_Quiz#1Max = 1 AND [Quiz#1Max] IS NULL) OR ([Quiz#1Max] = @Original_Quiz#1Max)) AND ((@IsNull_DateQuiz#1 = 1 AND [DateQuiz#1] IS NULL) OR ([DateQuiz#1] = @Original_DateQuiz#1)) AND ((@IsNull_Quiz#2 = 1 AND [Quiz#2] IS NULL) OR ([Quiz#2] = @Original_Quiz#2)) AND ((@IsNull_Quiz#2Max = 1 AND [Quiz#2Max] IS NULL) OR ([Quiz#2Max] = @Original_Quiz#2Max)) AND ((@IsNull_DateQuiz#2 = 1 AND [DateQuiz#2] IS NULL) OR ([DateQuiz#2] = @Original_DateQuiz#2)) AND ((@IsNull_Quiz#3 = 1 AND [Quiz#3] IS NULL) OR ([Quiz#3] = @Original_Quiz#3)) AND ((@IsNull_Quiz#3Max = 1 AND [Quiz#3Max] IS NULL) OR ([Quiz#3Max] = @Original_Quiz#3Max)) AND ((@IsNull_DateQuiz#3 = 1 AND [DateQuiz#3] IS NULL) OR ([DateQuiz#3] = @Original_DateQuiz#3)) AND ((@IsNull_Quiz#4 = 1 AND [Quiz#4] IS NULL) OR ([Quiz#4] = @Original_Quiz#4)) AND ((@IsNull_Quiz#4Max = 1 AND [Quiz#4Max] IS NULL) OR ([Quiz#4Max] = @Original_Quiz#4Max)) AND ((@IsNull_DateQuiz#4 = 1 AND [DateQuiz#4] IS NULL) OR ([DateQuiz#4] = @Original_DateQuiz#4)) AND ((@IsNull_Quiz#5 = 1 AND [Quiz#5] IS NULL) OR ([Quiz#5] = @Original_Quiz#5)) AND ((@IsNull_Quiz#5Max = 1 AND [Quiz#5Max] IS NULL) OR ([Quiz#5Max] = @Original_Quiz#5Max)) AND ((@IsNull_DateQuiz#5 = 1 AND [DateQuiz#5] IS NULL) OR ([DateQuiz#5] = @Original_DateQuiz#5)) AND ((@IsNull_Quiz#6 = 1 AND [Quiz#6] IS NULL) OR ([Quiz#6] = @Original_Quiz#6)) AND ((@IsNull_Quiz#6Max = 1 AND [Quiz#6Max] IS NULL) OR ([Quiz#6Max] = @Original_Quiz#6Max)) AND ((@IsNull_DateQuiz#6 = 1 AND [DateQuiz#6] IS NULL) OR ([DateQuiz#6] = @Original_DateQuiz#6)) AND ((@IsNull_Exam#1 = 1 AND [Exam#1] IS NULL) OR ([Exam#1] = @Original_Exam#1)) AND ((@IsNull_Exam#1Max = 1 AND [Exam#1Max] IS NULL) OR ([Exam#1Max] = @Original_Exam#1Max)) AND ((@IsNull_DateExam#1 = 1 AND [DateExam#1] IS NULL) OR ([DateExam#1] = @Original_DateExam#1)) AND ((@IsNull_Exam#2 = 1 AND [Exam#2] IS NULL) OR ([Exam#2] = @Original_Exam#2)) AND ((@IsNull_Exam#2Max = 1 AND [Exam#2Max] IS NULL) OR ([Exam#2Max] = @Original_Exam#2Max)) AND ((@IsNull_DateExam#2 = 1 AND [DateExam#2] IS NULL) OR ([DateExam#2] = @Original_DateExam#2)) AND ((@IsNull_Exam#3 = 1 AND [Exam#3] IS NULL) OR ([Exam#3] = @Original_Exam#3)) AND ((@IsNull_Exam#3Max = 1 AND [Exam#3Max] IS NULL) OR ([Exam#3Max] = @Original_Exam#3Max)) AND ((@IsNull_DateExam#3 = 1 AND [DateExam#3] IS NULL) OR ([DateExam#3] = @Original_DateExam#3)) AND ((@IsNull_Exam#4 = 1 AND [Exam#4] IS NULL) OR ([Exam#4] = @Original_Exam#4)) AND ((@IsNull_Exam#4Max = 1 AND [Exam#4Max] IS NULL) OR ([Exam#4Max] = @Original_Exam#4Max)) AND ((@IsNull_DateExam#4 = 1 AND [DateExam#4] IS NULL) OR ([DateExam#4] = @Original_DateExam#4)) AND ((@IsNull_Proyect#1 = 1 AND [Proyect#1] IS NULL) OR ([Proyect#1] = @Original_Proyect#1)) AND ((@IsNull_Proyect#1Max = 1 AND [Proyect#1Max] IS NULL) OR ([Proyect#1Max] = @Original_Proyect#1Max)) AND ((@IsNull_DateProyect#1 = 1 AND [DateProyect#1] IS NULL) OR ([DateProyect#1] = @Original_DateProyect#1)) AND ((@IsNull_Proyect#2 = 1 AND [Proyect#2] IS NULL) OR ([Proyect#2] = @Original_Proyect#2)) AND ((@IsNull_Proyect#2Max = 1 AND [Proyect#2Max] IS NULL) OR ([Proyect#2Max] = @Original_Proyect#2Max)) AND ((@IsNull_DateProyect#2 = 1 AND [DateProyect#2] IS NULL) OR ([DateProyect#2] = @Original_DateProyect#2)) AND ((@IsNull_TOTALQUIZES = 1 AND [TOTALQUIZES] IS NULL) OR ([TOTALQUIZES] = @Original_TOTALQUIZES)) AND ((@IsNull_TOTALEXAMS = 1 AND [TOTALEXAMS] IS NULL) OR ([TOTALEXAMS] = @Original_TOTALEXAMS)) AND ((@IsNull_TOTALPROYECTS = 1 AND [TOTALPROYECTS] IS NULL) OR ([TOTALPROYECTS] = @Original_TOTALPROYECTS)) AND ((@IsNull_TOTALQUIZPOINTS = 1 AND [TOTALQUIZPOINTS] IS NULL) OR ([TOTALQUIZPOINTS] = @Original_TOTALQUIZPOINTS)) AND ((@IsNull_TOTALQUIZMAXPOINTS = 1 AND [TOTALQUIZMAXPOINTS] IS NULL) OR ([TOTALQUIZMAXPOINTS] = @Original_TOTALQUIZMAXPOINTS)) AND ((@IsNull_TOTALEXAMPOINTS = 1 AND [TOTALEXAMPOINTS] IS NULL) OR ([TOTALEXAMPOINTS] = @Original_TOTALEXAMPOINTS)) AND ((@IsNull_TOTALEXAMMAXPOINTS = 1 AND [TOTALEXAMMAXPOINTS] IS NULL) OR ([TOTALEXAMMAXPOINTS] = @Original_TOTALEXAMMAXPOINTS)) AND ((@IsNull_TOTALPROYECTPOINTS = 1 AND [TOTALPROYECTPOINTS] IS NULL) OR ([TOTALPROYECTPOINTS] = @Original_TOTALPROYECTPOINTS)) AND ((@IsNull_TOTALPROYECTMAXPOINTS = 1 AND [TOTALPROYECTMAXPOINTS] IS NULL) OR ([TOTALPROYECTMAXPOINTS] = @Original_TOTALPROYECTMAXPOINTS)));
+SELECT ID, Name, StudentID, Course, [Group], Quiz#1, Quiz#1Max, DateQuiz#1, Quiz#2, Quiz#2Max, DateQuiz#2, Quiz#3, Quiz#3Max, DateQuiz#3, Quiz#4, Quiz#4Max, DateQuiz#4, Quiz#5, Quiz#5Max, DateQuiz#5, Quiz#6, Quiz#6Max, DateQuiz#6, Exam#1, Exam#1Max, DateExam#1, Exam#2, Exam#2Max, DateExam#2, Exam#3, Exam#3Max, DateExam#3, Exam#4, Exam#4Max, DateExam#4, Proyect#1, Proyect#1Max, DateProyect#1, Proyect#2, Proyect#2Max, DateProyect#2, TOTALQUIZES, TOTALEXAMS, TOTALPROYECTS, TOTALQUIZPOINTS, TOTALQUIZMAXPOINTS, TOTALEXAMPOINTS, TOTALEXAMMAXPOINTS, TOTALPROYECTPOINTS, TOTALPROYECTMAXPOINTS FROM Record WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@StudentID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="StudentID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Course" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Course" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Group" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#1Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#2Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#3" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#3Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#3Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#3" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#4" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#4Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#4Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#4" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#5" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#5Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#5Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#5" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#6" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Quiz#6Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#6Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateQuiz#6" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#1Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateExam#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#2Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateExam#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#3" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#3Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#3Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateExam#3" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#4" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Exam#4Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#4Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateExam#4" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Proyect#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Proyect#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#1Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateProyect#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateProyect#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Proyect#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Proyect#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#2Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DateProyect#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateProyect#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALQUIZES" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALEXAMS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALPROYECTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALQUIZPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALQUIZMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALEXAMPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALEXAMMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALPROYECTPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TOTALPROYECTMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Name" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_StudentID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StudentID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_StudentID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="StudentID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Course" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Course" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Group" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#1Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#1Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#1Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#2Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#2Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#2Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#3" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#3Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#3Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#3Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#3Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#3" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#4" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#4Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#4Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#4Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#4Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#4" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#5" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#5Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#5Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#5Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#5Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#5" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#6" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Quiz#6Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quiz#6Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Quiz#6Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Quiz#6Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateQuiz#6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateQuiz#6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateQuiz#6" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateQuiz#6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#1Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#1Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#1Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateExam#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateExam#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateExam#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#2Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#2Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#2Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateExam#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateExam#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateExam#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#3" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#3Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#3Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#3Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#3Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateExam#3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateExam#3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateExam#3" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#4" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exam#4Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exam#4Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Exam#4Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Exam#4Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateExam#4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateExam#4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateExam#4" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExam#4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proyect#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proyect#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Proyect#1" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proyect#1Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proyect#1Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Proyect#1Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#1Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateProyect#1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateProyect#1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateProyect#1" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateProyect#1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proyect#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proyect#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Proyect#2" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proyect#2Max" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proyect#2Max" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Proyect#2Max" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proyect#2Max" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DateProyect#2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DateProyect#2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateProyect#2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateProyect#2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALQUIZES" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALQUIZES" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALQUIZES" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZES" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALEXAMS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALEXAMS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALEXAMS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALPROYECTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALPROYECTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALPROYECTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALQUIZPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALQUIZPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALQUIZPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALQUIZMAXPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALQUIZMAXPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALQUIZMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALQUIZMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALEXAMPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALEXAMPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALEXAMPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALEXAMMAXPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALEXAMMAXPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALEXAMMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALEXAMMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALPROYECTPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALPROYECTPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALPROYECTPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTALPROYECTMAXPOINTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTALPROYECTMAXPOINTS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_TOTALPROYECTMAXPOINTS" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TOTALPROYECTMAXPOINTS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID" ColumnName="ID" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="StudentID" DataSetColumn="StudentID" />
+              <Mapping SourceColumn="Course" DataSetColumn="Course" />
+              <Mapping SourceColumn="Group" DataSetColumn="Group" />
+              <Mapping SourceColumn="Quiz#1" DataSetColumn="Quiz#1" />
+              <Mapping SourceColumn="Quiz#1Max" DataSetColumn="Quiz#1Max" />
+              <Mapping SourceColumn="DateQuiz#1" DataSetColumn="DateQuiz#1" />
+              <Mapping SourceColumn="Quiz#2" DataSetColumn="Quiz#2" />
+              <Mapping SourceColumn="Quiz#2Max" DataSetColumn="Quiz#2Max" />
+              <Mapping SourceColumn="DateQuiz#2" DataSetColumn="DateQuiz#2" />
+              <Mapping SourceColumn="Quiz#3" DataSetColumn="Quiz#3" />
+              <Mapping SourceColumn="Quiz#3Max" DataSetColumn="Quiz#3Max" />
+              <Mapping SourceColumn="DateQuiz#3" DataSetColumn="DateQuiz#3" />
+              <Mapping SourceColumn="Quiz#4" DataSetColumn="Quiz#4" />
+              <Mapping SourceColumn="Quiz#4Max" DataSetColumn="Quiz#4Max" />
+              <Mapping SourceColumn="DateQuiz#4" DataSetColumn="DateQuiz#4" />
+              <Mapping SourceColumn="Quiz#5" DataSetColumn="Quiz#5" />
+              <Mapping SourceColumn="Quiz#5Max" DataSetColumn="Quiz#5Max" />
+              <Mapping SourceColumn="DateQuiz#5" DataSetColumn="DateQuiz#5" />
+              <Mapping SourceColumn="Quiz#6" DataSetColumn="Quiz#6" />
+              <Mapping SourceColumn="Quiz#6Max" DataSetColumn="Quiz#6Max" />
+              <Mapping SourceColumn="DateQuiz#6" DataSetColumn="DateQuiz#6" />
+              <Mapping SourceColumn="Exam#1" DataSetColumn="Exam#1" />
+              <Mapping SourceColumn="Exam#1Max" DataSetColumn="Exam#1Max" />
+              <Mapping SourceColumn="DateExam#1" DataSetColumn="DateExam#1" />
+              <Mapping SourceColumn="Exam#2" DataSetColumn="Exam#2" />
+              <Mapping SourceColumn="Exam#2Max" DataSetColumn="Exam#2Max" />
+              <Mapping SourceColumn="DateExam#2" DataSetColumn="DateExam#2" />
+              <Mapping SourceColumn="Exam#3" DataSetColumn="Exam#3" />
+              <Mapping SourceColumn="Exam#3Max" DataSetColumn="Exam#3Max" />
+              <Mapping SourceColumn="DateExam#3" DataSetColumn="DateExam#3" />
+              <Mapping SourceColumn="Exam#4" DataSetColumn="Exam#4" />
+              <Mapping SourceColumn="Exam#4Max" DataSetColumn="Exam#4Max" />
+              <Mapping SourceColumn="DateExam#4" DataSetColumn="DateExam#4" />
+              <Mapping SourceColumn="Proyect#1" DataSetColumn="Proyect#1" />
+              <Mapping SourceColumn="Proyect#1Max" DataSetColumn="Proyect#1Max" />
+              <Mapping SourceColumn="DateProyect#1" DataSetColumn="DateProyect#1" />
+              <Mapping SourceColumn="Proyect#2" DataSetColumn="Proyect#2" />
+              <Mapping SourceColumn="Proyect#2Max" DataSetColumn="Proyect#2Max" />
+              <Mapping SourceColumn="DateProyect#2" DataSetColumn="DateProyect#2" />
+              <Mapping SourceColumn="TOTALQUIZES" DataSetColumn="TOTALQUIZES" />
+              <Mapping SourceColumn="TOTALEXAMS" DataSetColumn="TOTALEXAMS" />
+              <Mapping SourceColumn="TOTALPROYECTS" DataSetColumn="TOTALPROYECTS" />
+              <Mapping SourceColumn="TOTALQUIZPOINTS" DataSetColumn="TOTALQUIZPOINTS" />
+              <Mapping SourceColumn="TOTALQUIZMAXPOINTS" DataSetColumn="TOTALQUIZMAXPOINTS" />
+              <Mapping SourceColumn="TOTALEXAMPOINTS" DataSetColumn="TOTALEXAMPOINTS" />
+              <Mapping SourceColumn="TOTALEXAMMAXPOINTS" DataSetColumn="TOTALEXAMMAXPOINTS" />
+              <Mapping SourceColumn="TOTALPROYECTPOINTS" DataSetColumn="TOTALPROYECTPOINTS" />
+              <Mapping SourceColumn="TOTALPROYECTMAXPOINTS" DataSetColumn="TOTALPROYECTMAXPOINTS" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="dbo.Record" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBySearchGroupAdd" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBySearchGroupAdd" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBySearchGroupAdd">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Course, DateExam#1, DateExam#2, DateExam#3, DateExam#4, DateProyect#1, DateProyect#2, DateQuiz#1, DateQuiz#2, DateQuiz#3, DateQuiz#4, DateQuiz#5, DateQuiz#6, Exam#1, Exam#1Max, Exam#2, Exam#2Max, Exam#3, Exam#3Max, Exam#4, Exam#4Max, [Group], ID, Name, Proyect#1, Proyect#1Max, Proyect#2, Proyect#2Max, Quiz#1, Quiz#1Max, Quiz#2, Quiz#2Max, Quiz#3, Quiz#3Max, Quiz#4, Quiz#4Max, Quiz#5, Quiz#5Max, Quiz#6, Quiz#6Max, StudentID, TOTALEXAMMAXPOINTS, TOTALEXAMPOINTS, TOTALEXAMS, TOTALPROYECTMAXPOINTS, TOTALPROYECTPOINTS, TOTALPROYECTS, TOTALQUIZES, TOTALQUIZMAXPOINTS, TOTALQUIZPOINTS FROM Record WHERE ([Group] = @group)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="dbo.Record" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBySearchGroupGrade" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy1" GeneratorSourceName="FillBySearchGroupGrade" GetMethodModifier="Public" GetMethodName="GetDataBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBySearchGroupGrade">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Course, DateExam#1, DateExam#2, DateExam#3, DateExam#4, DateProyect#1, DateProyect#2, DateQuiz#1, DateQuiz#2, DateQuiz#3, DateQuiz#4, DateQuiz#5, DateQuiz#6, Exam#1, Exam#1Max, Exam#2, Exam#2Max, Exam#3, Exam#3Max, Exam#4, Exam#4Max, [Group], ID, Name, Proyect#1, Proyect#1Max, Proyect#2, Proyect#2Max, Quiz#1, Quiz#1Max, Quiz#2, Quiz#2Max, Quiz#3, Quiz#3Max, Quiz#4, Quiz#4Max, Quiz#5, Quiz#5Max, Quiz#6, Quiz#6Max, StudentID, TOTALEXAMMAXPOINTS, TOTALEXAMPOINTS, TOTALEXAMS, TOTALPROYECTMAXPOINTS, TOTALPROYECTPOINTS, TOTALPROYECTS, TOTALQUIZES, TOTALQUIZMAXPOINTS, TOTALQUIZPOINTS FROM Record WHERE ([Group] = @group)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuerySetQuiz1Max" Modifier="Public" Name="UpdateQuerySetQuiz1Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateQuerySetQuiz1Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [Quiz#1Max] = @Quiz#1
+WHERE [Group]=@group
+
+</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Quiz#1" ColumnName="Quiz#1Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Quiz#1" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Quiz#1Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuerySetQuiz2Max" Modifier="Public" Name="UpdateQuerySetQuiz2Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="UpdateQuerySetQuiz2Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [Quiz#2Max] = @Quiz#2
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Quiz#2" ColumnName="Quiz#2Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Quiz#2" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Quiz#2Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuerySetQuiz3Max" Modifier="Public" Name="UpdateQuerySetQuiz3Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="UpdateQuerySetQuiz3Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [Quiz#3Max] = @Quiz#3
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Quiz#3" ColumnName="Quiz#3Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Quiz#3" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Quiz#3Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuerySetQuiz4Max" Modifier="Public" Name="UpdateQuerySetQuiz4Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="UpdateQuerySetQuiz4Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [Quiz#4Max] = @Quiz#4
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Quiz#4" ColumnName="Quiz#4Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Quiz#4" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Quiz#4Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuerySetQuiz5Max" Modifier="Public" Name="UpdateQuerySetQuiz5Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="UpdateQuerySetQuiz5Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [Quiz#5Max] = @Quiz#5
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Quiz#5" ColumnName="Quiz#5Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Quiz#5" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Quiz#5Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuerySetQuiz6Max" Modifier="Public" Name="UpdateQuerySetQuiz6Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="UpdateQuerySetQuiz6Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [Quiz#6Max] = @Quiz#6
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Quiz#6" ColumnName="Quiz#6Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Quiz#6" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Quiz#6Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetDateExam1" Modifier="Public" Name="UpdateSetDateExam1" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy8" UserSourceName="UpdateSetDateExam1">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET    [DateExam#1] = @DateExam#1
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateExam#1" ColumnName="DateExam#1" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateExam#1" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateExam#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetDateExam2" Modifier="Public" Name="UpdateSetDateExam2" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy9" UserSourceName="UpdateSetDateExam2">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET    [DateExam#2] = @DateExam#2
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateExam#2" ColumnName="DateExam#2" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateExam#2" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateExam#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetDateExam3" Modifier="Public" Name="UpdateSetDateExam3" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy10" UserSourceName="UpdateSetDateExam3">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET    [DateExam#3] = @DateExam#3
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateExam#3" ColumnName="DateExam#3" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateExam#3" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateExam#3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetDateExam4" Modifier="Public" Name="UpdateSetDateExam4" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy11" UserSourceName="UpdateSetDateExam4">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET    [DateExam#4] = @DateExam#4
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateExam#4" ColumnName="DateExam#4" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateExam#4" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateExam#4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetDateQuiz1" Modifier="Public" Name="UpdateSetDateQuiz1" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy12" UserSourceName="UpdateSetDateQuiz1">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [DateQuiz#1] = @DateQuiz#1
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateQuiz#1" ColumnName="DateQuiz#1" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateQuiz#1" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateQuiz#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetDateQuiz2" Modifier="Public" Name="UpdateSetDateQuiz2" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy13" UserSourceName="UpdateSetDateQuiz2">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [DateQuiz#2] = @DateQuiz#2
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateQuiz#2" ColumnName="DateQuiz#2" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateQuiz#2" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateQuiz#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetDateQuiz3" Modifier="Public" Name="UpdateSetDateQuiz3" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy14" UserSourceName="UpdateSetDateQuiz3">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [DateQuiz#3] = @DateQuiz#3
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateQuiz#3" ColumnName="DateQuiz#3" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateQuiz#3" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateQuiz#3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetDateQuiz4" Modifier="Public" Name="UpdateSetDateQuiz4" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy15" UserSourceName="UpdateSetDateQuiz4">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [DateQuiz#4] = @DateQuiz#4
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateQuiz#4" ColumnName="DateQuiz#4" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateQuiz#4" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateQuiz#4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetDateQuiz5" Modifier="Public" Name="UpdateSetDateQuiz5" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy16" UserSourceName="UpdateSetDateQuiz5">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [DateQuiz#5] = @DateQuiz#5
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateQuiz#5" ColumnName="DateQuiz#5" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateQuiz#5" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateQuiz#5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetDateQuiz6" Modifier="Public" Name="UpdateSetDateQuiz6" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy17" UserSourceName="UpdateSetDateQuiz6">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [DateQuiz#6] = @DateQuiz#6
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateQuiz#6" ColumnName="DateQuiz#6" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateQuiz#6" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateQuiz#6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetExam1Max" Modifier="Public" Name="UpdateSetExam1Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy18" UserSourceName="UpdateSetExam1Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [Exam#1Max] = @Exam#1Max
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Exam#1Max" ColumnName="Exam#1Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Exam#1Max" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Exam#1Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetExam2Max" Modifier="Public" Name="UpdateSetExam2Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy19" UserSourceName="UpdateSetExam2Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [Exam#2Max] = @Exam#2Max
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Exam#2Max" ColumnName="Exam#2Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Exam#2Max" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Exam#2Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetExam3Max" Modifier="Public" Name="UpdateSetExam3Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy20" UserSourceName="UpdateSetExam3Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [Exam#3Max] = @Exam#3Max
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Exam#3Max" ColumnName="Exam#3Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Exam#3Max" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Exam#3Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetExam4Max" Modifier="Public" Name="UpdateSetExam4Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy21" UserSourceName="UpdateSetExam4Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET   [Exam#4Max] = @Exam#4Max
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Exam#4Max" ColumnName="Exam#4Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Exam#4Max" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Exam#4Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetProy1Max" Modifier="Public" Name="UpdateSetProy1Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy22" UserSourceName="UpdateSetProy1Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET    [Proyect#1Max] = @Proyect#1Max
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Proyect#1Max" ColumnName="Proyect#1Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Proyect#1Max" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Proyect#1Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetProy2Max" Modifier="Public" Name="UpdateSetProy2Max" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy23" UserSourceName="UpdateSetProy2Max">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET    [Proyect#2Max] = @Proyect#2Max
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Proyect#2Max" ColumnName="Proyect#2Max" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Proyect#2Max" Precision="0" ProviderType="Float" Scale="0" Size="8" SourceColumn="Proyect#2Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetProyDate1" Modifier="Public" Name="UpdateSetProyDate1" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy24" UserSourceName="UpdateSetProyDate1">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET    [DateProyect#1] = @DateProyect#1
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateProyect#1" ColumnName="DateProyect#1" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateProyect#1" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateProyect#1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetProyDate2" Modifier="Public" Name="UpdateSetProyDate2" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy25" UserSourceName="UpdateSetProyDate2">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record]  
+SET    [DateProyect#2] = @DateProyect#2
+WHERE [Group]=@group</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DateProyect#2" ColumnName="DateProyect#2" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@DateProyect#2" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DateProyect#2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="group" ColumnName="Group" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Record" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@group" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="Group" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetTOTALEXAMMAXPOINTS" Modifier="Public" Name="UpdateSetTOTALEXAMMAXPOINTS" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy26" UserSourceName="UpdateSetTOTALEXAMMAXPOINTS">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record] 
+SET TOTALEXAMMAXPOINTS =ISNULL(Exam#1Max,0) +ISNULL(Exam#2Max,0)+ ISNULL(Exam#3Max,0)+ ISNULL(Exam#4Max,0)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetTOTALEXAMPOINTS" Modifier="Public" Name="UpdateSetTOTALEXAMPOINTS" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy27" UserSourceName="UpdateSetTOTALEXAMPOINTS">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record] 
+SET TOTALEXAMPOINTS =ISNULL(Exam#1,0) +ISNULL(Exam#2,0)+ ISNULL(Exam#3,0)+ ISNULL(Exam#4,0)
+
+
+
+
+
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetTOTALEXAMS" Modifier="Public" Name="UpdateSetTOTALEXAMS" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy28" UserSourceName="UpdateSetTOTALEXAMS">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record] 
+SET TOTALEXAMS =CONVERT(DECIMAL(10,2),TOTALEXAMPOINTS / TOTALEXAMMAXPOINTS * 100)
+WHERE TOTALEXAMMAXPOINTS &gt; 0 AND TOTALEXAMPOINTS &gt;= 0 </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetTOTALPROYECTMAXPOINTS" Modifier="Public" Name="UpdateSetTOTALPROYECTMAXPOINTS" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy29" UserSourceName="UpdateSetTOTALPROYECTMAXPOINTS">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record] 
+SET TOTALPROYECTMAXPOINTS =ISNULL(Proyect#1Max,0) + ISNULL(Proyect#2Max,0)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetTOTALPROYECTPOINTS" Modifier="Public" Name="UpdateSetTOTALPROYECTPOINTS" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy30" UserSourceName="UpdateSetTOTALPROYECTPOINTS">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record] 
+SET TOTALPROYECTPOINTS =ISNULL(Proyect#1,0) +ISNULL(Proyect#2,0)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetTOTALPROYECTS" Modifier="Public" Name="UpdateSetTOTALPROYECTS" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy31" UserSourceName="UpdateSetTOTALPROYECTS">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record] 
+SET TOTALPROYECTs = CONVERT(DECIMAL(10,2),TOTALPROYECTPOINTS / TOTALPROYECTMAXPOINTS * 100)
+WHERE TOTALPROYECTMAXPOINTS &gt; 0 AND TOTALPROYECTPOINTS &gt;= 0 
+
+
+
+
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetTOTALQUIZES" Modifier="Public" Name="UpdateSetTOTALQUIZES" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy32" UserSourceName="UpdateSetTOTALQUIZES">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record] 
+SET TOTALQUIZES = CONVERT(DECIMAL(10,2),TOTALQUIZPOINTS / TOTALQUIZMAXPOINTS * 100)
+WHERE TOTALQUIZMAXPOINTS &gt; 0 AND TOTALQUIZPOINTS &gt;= 0 
+
+
+
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetTOTALQUIZMAXPOINTS" Modifier="Public" Name="UpdateSetTOTALQUIZMAXPOINTS" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy33" UserSourceName="UpdateSetTOTALQUIZMAXPOINTS">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record] 
+SET TOTALQUIZMAXPOINTS =ISNULL(Quiz#1Max,0) +ISNULL(Quiz#2Max,0)+ ISNULL(Quiz#3Max,0)+ ISNULL(Quiz#4Max,0)+ISNULL(Quiz#5Max,0)+ISNULL(Quiz#6Max,0)
+
+
+
+
+
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSetTOTALQUIZPOINTS" Modifier="Public" Name="UpdateSetTOTALQUIZPOINTS" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy34" UserSourceName="UpdateSetTOTALQUIZPOINTS">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[Record] 
+SET TOTALQUIZPOINTS =ISNULL(Quiz#1,0) +ISNULL(Quiz#2,0)+ ISNULL(Quiz#3,0)+ ISNULL(Quiz#4,0)+ISNULL(Quiz#5,0)+ISNULL(Quiz#6,0)
+
+
+
+
+
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LoginTableAdapter" GeneratorDataComponentClassName="LoginTableAdapter" Name="Login" UserDataComponentName="LoginTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="dbo.Login" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Login] WHERE (([Id] = @Original_Id) AND ([username] = @Original_username) AND ([password] = @Original_password))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_username" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="username" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_password" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Login] ([username], [password]) VALUES (@username, @password);
+SELECT Id, username, password FROM Login WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@username" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="username" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@password" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, username, password FROM dbo.Login</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Login] SET [username] = @username, [password] = @password WHERE (([Id] = @Original_Id) AND ([username] = @Original_username) AND ([password] = @Original_password));
+SELECT Id, username, password FROM Login WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@username" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="username" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@password" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_username" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="username" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_password" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="username" DataSetColumn="username" />
+              <Mapping SourceColumn="password" DataSetColumn="password" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="StudentRecordDBConnectionString (MySettings)" DbObjectName="dbo.Login" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByUserANDPw" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillByUserANDPw" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillByUserANDPw">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Id, username, password 
+FROM dbo.Login 
+WHERE username = @username AND password = @password</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="username" ColumnName="username" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Login" DataTypeServer="varchar(15)" DbType="AnsiString" Direction="Input" ParameterName="@username" Precision="0" ProviderType="VarChar" Scale="0" Size="15" SourceColumn="username" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="password" ColumnName="password" DataSourceName="[C:\USERS\AMILCAR JOEL\DESKTOP\CLASSGRADEREGISTER\CLASSGRADEREGISTER\STUDENTRECORDDB.MDF].dbo.Login" DataTypeServer="varchar(15)" DbType="AnsiString" Direction="Input" ParameterName="@password" Precision="0" ProviderType="VarChar" Scale="0" Size="15" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StudentRecordDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="StudentRecordDataSet" msprop:Generator_UserDSName="StudentRecordDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Record" msprop:Generator_TableClassName="RecordDataTable" msprop:Generator_TableVarName="tableRecord" msprop:Generator_RowChangedName="RecordRowChanged" msprop:Generator_TablePropName="Record" msprop:Generator_RowDeletingName="RecordRowDeleting" msprop:Generator_RowChangingName="RecordRowChanging" msprop:Generator_RowEvHandlerName="RecordRowChangeEventHandler" msprop:Generator_RowDeletedName="RecordRowDeleted" msprop:Generator_RowClassName="RecordRow" msprop:Generator_UserTableName="Record" msprop:Generator_RowEvArgName="RecordRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StudentID" msprop:Generator_ColumnVarNameInTable="columnStudentID" msprop:Generator_ColumnPropNameInRow="StudentID" msprop:Generator_ColumnPropNameInTable="StudentIDColumn" msprop:Generator_UserColumnName="StudentID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Course" msprop:Generator_ColumnVarNameInTable="columnCourse" msprop:Generator_ColumnPropNameInRow="Course" msprop:Generator_ColumnPropNameInTable="CourseColumn" msprop:Generator_UserColumnName="Course">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Group" msprop:Generator_ColumnVarNameInTable="columnGroup" msprop:Generator_ColumnPropNameInRow="Group" msprop:Generator_ColumnPropNameInTable="GroupColumn" msprop:Generator_UserColumnName="Group">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quiz_x0023_1" msprop:Generator_ColumnVarNameInTable="_columnQuiz_1" msprop:Generator_ColumnPropNameInRow="_Quiz_1" msprop:Generator_ColumnPropNameInTable="_Quiz_1Column" msprop:Generator_UserColumnName="Quiz#1" type="xs:double" minOccurs="0" />
+              <xs:element name="Quiz_x0023_1Max" msprop:Generator_ColumnVarNameInTable="_columnQuiz_1Max" msprop:Generator_ColumnPropNameInRow="_Quiz_1Max" msprop:Generator_ColumnPropNameInTable="_Quiz_1MaxColumn" msprop:Generator_UserColumnName="Quiz#1Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateQuiz_x0023_1" msprop:Generator_ColumnVarNameInTable="_columnDateQuiz_1" msprop:Generator_ColumnPropNameInRow="_DateQuiz_1" msprop:Generator_ColumnPropNameInTable="_DateQuiz_1Column" msprop:Generator_UserColumnName="DateQuiz#1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Quiz_x0023_2" msprop:Generator_ColumnVarNameInTable="_columnQuiz_2" msprop:Generator_ColumnPropNameInRow="_Quiz_2" msprop:Generator_ColumnPropNameInTable="_Quiz_2Column" msprop:Generator_UserColumnName="Quiz#2" type="xs:double" minOccurs="0" />
+              <xs:element name="Quiz_x0023_2Max" msprop:Generator_ColumnVarNameInTable="_columnQuiz_2Max" msprop:Generator_ColumnPropNameInRow="_Quiz_2Max" msprop:Generator_ColumnPropNameInTable="_Quiz_2MaxColumn" msprop:Generator_UserColumnName="Quiz#2Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateQuiz_x0023_2" msprop:Generator_ColumnVarNameInTable="_columnDateQuiz_2" msprop:Generator_ColumnPropNameInRow="_DateQuiz_2" msprop:Generator_ColumnPropNameInTable="_DateQuiz_2Column" msprop:Generator_UserColumnName="DateQuiz#2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Quiz_x0023_3" msprop:Generator_ColumnVarNameInTable="_columnQuiz_3" msprop:Generator_ColumnPropNameInRow="_Quiz_3" msprop:Generator_ColumnPropNameInTable="_Quiz_3Column" msprop:Generator_UserColumnName="Quiz#3" type="xs:double" minOccurs="0" />
+              <xs:element name="Quiz_x0023_3Max" msprop:Generator_ColumnVarNameInTable="_columnQuiz_3Max" msprop:Generator_ColumnPropNameInRow="_Quiz_3Max" msprop:Generator_ColumnPropNameInTable="_Quiz_3MaxColumn" msprop:Generator_UserColumnName="Quiz#3Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateQuiz_x0023_3" msprop:Generator_ColumnVarNameInTable="_columnDateQuiz_3" msprop:Generator_ColumnPropNameInRow="_DateQuiz_3" msprop:Generator_ColumnPropNameInTable="_DateQuiz_3Column" msprop:Generator_UserColumnName="DateQuiz#3" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Quiz_x0023_4" msprop:Generator_ColumnVarNameInTable="_columnQuiz_4" msprop:Generator_ColumnPropNameInRow="_Quiz_4" msprop:Generator_ColumnPropNameInTable="_Quiz_4Column" msprop:Generator_UserColumnName="Quiz#4" type="xs:double" minOccurs="0" />
+              <xs:element name="Quiz_x0023_4Max" msprop:Generator_ColumnVarNameInTable="_columnQuiz_4Max" msprop:Generator_ColumnPropNameInRow="_Quiz_4Max" msprop:Generator_ColumnPropNameInTable="_Quiz_4MaxColumn" msprop:Generator_UserColumnName="Quiz#4Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateQuiz_x0023_4" msprop:Generator_ColumnVarNameInTable="_columnDateQuiz_4" msprop:Generator_ColumnPropNameInRow="_DateQuiz_4" msprop:Generator_ColumnPropNameInTable="_DateQuiz_4Column" msprop:Generator_UserColumnName="DateQuiz#4" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Quiz_x0023_5" msprop:Generator_ColumnVarNameInTable="_columnQuiz_5" msprop:Generator_ColumnPropNameInRow="_Quiz_5" msprop:Generator_ColumnPropNameInTable="_Quiz_5Column" msprop:Generator_UserColumnName="Quiz#5" type="xs:double" minOccurs="0" />
+              <xs:element name="Quiz_x0023_5Max" msprop:Generator_ColumnVarNameInTable="_columnQuiz_5Max" msprop:Generator_ColumnPropNameInRow="_Quiz_5Max" msprop:Generator_ColumnPropNameInTable="_Quiz_5MaxColumn" msprop:Generator_UserColumnName="Quiz#5Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateQuiz_x0023_5" msprop:Generator_ColumnVarNameInTable="_columnDateQuiz_5" msprop:Generator_ColumnPropNameInRow="_DateQuiz_5" msprop:Generator_ColumnPropNameInTable="_DateQuiz_5Column" msprop:Generator_UserColumnName="DateQuiz#5" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Quiz_x0023_6" msprop:Generator_ColumnVarNameInTable="_columnQuiz_6" msprop:Generator_ColumnPropNameInRow="_Quiz_6" msprop:Generator_ColumnPropNameInTable="_Quiz_6Column" msprop:Generator_UserColumnName="Quiz#6" type="xs:double" minOccurs="0" />
+              <xs:element name="Quiz_x0023_6Max" msprop:Generator_ColumnVarNameInTable="_columnQuiz_6Max" msprop:Generator_ColumnPropNameInRow="_Quiz_6Max" msprop:Generator_ColumnPropNameInTable="_Quiz_6MaxColumn" msprop:Generator_UserColumnName="Quiz#6Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateQuiz_x0023_6" msprop:Generator_ColumnVarNameInTable="_columnDateQuiz_6" msprop:Generator_ColumnPropNameInRow="_DateQuiz_6" msprop:Generator_ColumnPropNameInTable="_DateQuiz_6Column" msprop:Generator_UserColumnName="DateQuiz#6" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Exam_x0023_1" msprop:Generator_ColumnVarNameInTable="_columnExam_1" msprop:Generator_ColumnPropNameInRow="_Exam_1" msprop:Generator_ColumnPropNameInTable="_Exam_1Column" msprop:Generator_UserColumnName="Exam#1" type="xs:double" minOccurs="0" />
+              <xs:element name="Exam_x0023_1Max" msprop:Generator_ColumnVarNameInTable="_columnExam_1Max" msprop:Generator_ColumnPropNameInRow="_Exam_1Max" msprop:Generator_ColumnPropNameInTable="_Exam_1MaxColumn" msprop:Generator_UserColumnName="Exam#1Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateExam_x0023_1" msprop:Generator_ColumnVarNameInTable="_columnDateExam_1" msprop:Generator_ColumnPropNameInRow="_DateExam_1" msprop:Generator_ColumnPropNameInTable="_DateExam_1Column" msprop:Generator_UserColumnName="DateExam#1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Exam_x0023_2" msprop:Generator_ColumnVarNameInTable="_columnExam_2" msprop:Generator_ColumnPropNameInRow="_Exam_2" msprop:Generator_ColumnPropNameInTable="_Exam_2Column" msprop:Generator_UserColumnName="Exam#2" type="xs:double" minOccurs="0" />
+              <xs:element name="Exam_x0023_2Max" msprop:Generator_ColumnVarNameInTable="_columnExam_2Max" msprop:Generator_ColumnPropNameInRow="_Exam_2Max" msprop:Generator_ColumnPropNameInTable="_Exam_2MaxColumn" msprop:Generator_UserColumnName="Exam#2Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateExam_x0023_2" msprop:Generator_ColumnVarNameInTable="_columnDateExam_2" msprop:Generator_ColumnPropNameInRow="_DateExam_2" msprop:Generator_ColumnPropNameInTable="_DateExam_2Column" msprop:Generator_UserColumnName="DateExam#2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Exam_x0023_3" msprop:Generator_ColumnVarNameInTable="_columnExam_3" msprop:Generator_ColumnPropNameInRow="_Exam_3" msprop:Generator_ColumnPropNameInTable="_Exam_3Column" msprop:Generator_UserColumnName="Exam#3" type="xs:double" minOccurs="0" />
+              <xs:element name="Exam_x0023_3Max" msprop:Generator_ColumnVarNameInTable="_columnExam_3Max" msprop:Generator_ColumnPropNameInRow="_Exam_3Max" msprop:Generator_ColumnPropNameInTable="_Exam_3MaxColumn" msprop:Generator_UserColumnName="Exam#3Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateExam_x0023_3" msprop:Generator_ColumnVarNameInTable="_columnDateExam_3" msprop:Generator_ColumnPropNameInRow="_DateExam_3" msprop:Generator_ColumnPropNameInTable="_DateExam_3Column" msprop:Generator_UserColumnName="DateExam#3" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Exam_x0023_4" msprop:Generator_ColumnVarNameInTable="_columnExam_4" msprop:Generator_ColumnPropNameInRow="_Exam_4" msprop:Generator_ColumnPropNameInTable="_Exam_4Column" msprop:Generator_UserColumnName="Exam#4" type="xs:double" minOccurs="0" />
+              <xs:element name="Exam_x0023_4Max" msprop:Generator_ColumnVarNameInTable="_columnExam_4Max" msprop:Generator_ColumnPropNameInRow="_Exam_4Max" msprop:Generator_ColumnPropNameInTable="_Exam_4MaxColumn" msprop:Generator_UserColumnName="Exam#4Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateExam_x0023_4" msprop:Generator_ColumnVarNameInTable="_columnDateExam_4" msprop:Generator_ColumnPropNameInRow="_DateExam_4" msprop:Generator_ColumnPropNameInTable="_DateExam_4Column" msprop:Generator_UserColumnName="DateExam#4" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Proyect_x0023_1" msprop:Generator_ColumnVarNameInTable="_columnProyect_1" msprop:Generator_ColumnPropNameInRow="_Proyect_1" msprop:Generator_ColumnPropNameInTable="_Proyect_1Column" msprop:Generator_UserColumnName="Proyect#1" type="xs:double" minOccurs="0" />
+              <xs:element name="Proyect_x0023_1Max" msprop:Generator_ColumnVarNameInTable="_columnProyect_1Max" msprop:Generator_ColumnPropNameInRow="_Proyect_1Max" msprop:Generator_ColumnPropNameInTable="_Proyect_1MaxColumn" msprop:Generator_UserColumnName="Proyect#1Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateProyect_x0023_1" msprop:Generator_ColumnVarNameInTable="_columnDateProyect_1" msprop:Generator_ColumnPropNameInRow="_DateProyect_1" msprop:Generator_ColumnPropNameInTable="_DateProyect_1Column" msprop:Generator_UserColumnName="DateProyect#1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Proyect_x0023_2" msprop:Generator_ColumnVarNameInTable="_columnProyect_2" msprop:Generator_ColumnPropNameInRow="_Proyect_2" msprop:Generator_ColumnPropNameInTable="_Proyect_2Column" msprop:Generator_UserColumnName="Proyect#2" type="xs:double" minOccurs="0" />
+              <xs:element name="Proyect_x0023_2Max" msprop:Generator_ColumnVarNameInTable="_columnProyect_2Max" msprop:Generator_ColumnPropNameInRow="_Proyect_2Max" msprop:Generator_ColumnPropNameInTable="_Proyect_2MaxColumn" msprop:Generator_UserColumnName="Proyect#2Max" type="xs:double" minOccurs="0" />
+              <xs:element name="DateProyect_x0023_2" msprop:Generator_ColumnVarNameInTable="_columnDateProyect_2" msprop:Generator_ColumnPropNameInRow="_DateProyect_2" msprop:Generator_ColumnPropNameInTable="_DateProyect_2Column" msprop:Generator_UserColumnName="DateProyect#2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TOTALQUIZES" msprop:Generator_ColumnVarNameInTable="columnTOTALQUIZES" msprop:Generator_ColumnPropNameInRow="TOTALQUIZES" msprop:Generator_ColumnPropNameInTable="TOTALQUIZESColumn" msprop:Generator_UserColumnName="TOTALQUIZES" type="xs:double" minOccurs="0" />
+              <xs:element name="TOTALEXAMS" msprop:Generator_ColumnVarNameInTable="columnTOTALEXAMS" msprop:Generator_ColumnPropNameInRow="TOTALEXAMS" msprop:Generator_ColumnPropNameInTable="TOTALEXAMSColumn" msprop:Generator_UserColumnName="TOTALEXAMS" type="xs:double" minOccurs="0" />
+              <xs:element name="TOTALPROYECTS" msprop:Generator_ColumnVarNameInTable="columnTOTALPROYECTS" msprop:Generator_ColumnPropNameInRow="TOTALPROYECTS" msprop:Generator_ColumnPropNameInTable="TOTALPROYECTSColumn" msprop:Generator_UserColumnName="TOTALPROYECTS" type="xs:double" minOccurs="0" />
+              <xs:element name="TOTALQUIZPOINTS" msprop:Generator_ColumnVarNameInTable="columnTOTALQUIZPOINTS" msprop:Generator_ColumnPropNameInRow="TOTALQUIZPOINTS" msprop:Generator_ColumnPropNameInTable="TOTALQUIZPOINTSColumn" msprop:Generator_UserColumnName="TOTALQUIZPOINTS" type="xs:double" minOccurs="0" />
+              <xs:element name="TOTALQUIZMAXPOINTS" msprop:Generator_ColumnVarNameInTable="columnTOTALQUIZMAXPOINTS" msprop:Generator_ColumnPropNameInRow="TOTALQUIZMAXPOINTS" msprop:Generator_ColumnPropNameInTable="TOTALQUIZMAXPOINTSColumn" msprop:Generator_UserColumnName="TOTALQUIZMAXPOINTS" type="xs:double" minOccurs="0" />
+              <xs:element name="TOTALEXAMPOINTS" msprop:Generator_ColumnVarNameInTable="columnTOTALEXAMPOINTS" msprop:Generator_ColumnPropNameInRow="TOTALEXAMPOINTS" msprop:Generator_ColumnPropNameInTable="TOTALEXAMPOINTSColumn" msprop:Generator_UserColumnName="TOTALEXAMPOINTS" type="xs:double" minOccurs="0" />
+              <xs:element name="TOTALEXAMMAXPOINTS" msprop:Generator_ColumnVarNameInTable="columnTOTALEXAMMAXPOINTS" msprop:Generator_ColumnPropNameInRow="TOTALEXAMMAXPOINTS" msprop:Generator_ColumnPropNameInTable="TOTALEXAMMAXPOINTSColumn" msprop:Generator_UserColumnName="TOTALEXAMMAXPOINTS" type="xs:double" minOccurs="0" />
+              <xs:element name="TOTALPROYECTPOINTS" msprop:Generator_ColumnVarNameInTable="columnTOTALPROYECTPOINTS" msprop:Generator_ColumnPropNameInRow="TOTALPROYECTPOINTS" msprop:Generator_ColumnPropNameInTable="TOTALPROYECTPOINTSColumn" msprop:Generator_UserColumnName="TOTALPROYECTPOINTS" type="xs:double" minOccurs="0" />
+              <xs:element name="TOTALPROYECTMAXPOINTS" msprop:Generator_ColumnVarNameInTable="columnTOTALPROYECTMAXPOINTS" msprop:Generator_ColumnPropNameInRow="TOTALPROYECTMAXPOINTS" msprop:Generator_ColumnPropNameInTable="TOTALPROYECTMAXPOINTSColumn" msprop:Generator_UserColumnName="TOTALPROYECTMAXPOINTS" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Login" msprop:Generator_TableClassName="LoginDataTable" msprop:Generator_TableVarName="tableLogin" msprop:Generator_TablePropName="Login" msprop:Generator_RowDeletingName="LoginRowDeleting" msprop:Generator_RowChangingName="LoginRowChanging" msprop:Generator_RowEvHandlerName="LoginRowChangeEventHandler" msprop:Generator_RowDeletedName="LoginRowDeleted" msprop:Generator_UserTableName="Login" msprop:Generator_RowChangedName="LoginRowChanged" msprop:Generator_RowEvArgName="LoginRowChangeEvent" msprop:Generator_RowClassName="LoginRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="username" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="password" msprop:Generator_ColumnVarNameInTable="columnpassword" msprop:Generator_ColumnPropNameInRow="password" msprop:Generator_ColumnPropNameInTable="passwordColumn" msprop:Generator_UserColumnName="password">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Record" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="Login_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Login" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
