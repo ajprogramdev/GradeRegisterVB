@@ -11,7 +11,9 @@ This desktop application starts with a secured login. When accessed it allows th
   * Calculate averagegrade
   * Print,PDF students final grades.
 ## Quick Display runthrough
+
 <img src="Proyectdemo.gif" height="300" style="object-fit:cover;" >
+
 ## What could have been done better?
   * Overall visual design.
   * Database relationships.
